@@ -6,7 +6,6 @@ phases:
       - echo Install started on `date`
       - echo Installing webpack3-express4-typescript2
       - npm install
-      - npm run build
 #  pre_build:
 #     commands:
 #      - echo pre_build NA
