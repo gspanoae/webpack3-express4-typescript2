@@ -20,6 +20,7 @@ phases:
        - cp -R dist/app.js package.json dist-output
        - cd dist-output
        - zip -r ../package.zip *
+       - cd ..
        - pwd
        - ls -la
        - ls dist-output/
