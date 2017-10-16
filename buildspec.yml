@@ -16,8 +16,8 @@ phases:
 #      - echo build NA
   post_build:
     commands:
-       - mkdir build-output
-       - cp -R dist/bundle.js dist-output
+       - mkdir dist-output
+       - cp -R dist/bundle.js package.json dist-output
        - pwd
        - ls -la
        - ls dist-output/
