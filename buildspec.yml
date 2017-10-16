@@ -1,0 +1,29 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Install started on `date`
+      - echo Installing webpack3-express4-typescript2
+      - npm install
+      - npm run build
+#  pre_build:
+#     commands:
+#      - echo pre_build NA
+#  build:
+#    commands:
+#      - echo Build started on `date`
+#      - echo build NA
+  post_build:
+    commands:
+       - mkdir build-output
+       - pwd
+       - ls -la
+       - cp -R dist/bundle.js dist-output
+       - echo Build completed on `date`
+artifacts:
+  files:
+    - dist-output/**/*
+    # - location
+  #discard-paths: yes
+  #base-directory: location
