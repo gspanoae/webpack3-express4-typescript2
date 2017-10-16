@@ -18,13 +18,15 @@ phases:
     commands:
        - mkdir dist-output
        - cp -R dist/app.js package.json dist-output
+       - cd dist-output
+       - zip -r ../package.zip *
        - pwd
        - ls -la
        - ls dist-output/
        - echo Build completed on `date`
 artifacts:
   files:
-    - dist-output/**/*
+    - package.zip
     # - location
   #discard-paths: yes
   #base-directory: location
