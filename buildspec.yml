@@ -20,7 +20,7 @@ phases:
 artifacts:
   files:
     - dist/bundle.js
-    - dist/package.json
+    - package.json
   discard-paths: yes
   # - location
   #discard-paths: yes
