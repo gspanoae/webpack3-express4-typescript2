@@ -10,20 +10,17 @@ phases:
 #  pre_build:
 #     commands:
 #      - echo pre_build NA
-#  build:
-#    commands:
-#      - echo Build started on `date`
-#      - echo build NA
+  build:
+    commands:
+       - echo Build started on `date`
+       - npm run build
   post_build:
     commands:
-       - mkdir dist-output
-       - cp -R dist/app.js package.json dist-output
        - echo Build completed on `date`
 artifacts:
   files:
-    - dist-output/app.js
-    - dist-output/package.json
-  discard-paths: yes
-    # - location
+    - dist/bundle.js
+  #discard-paths: yes
+  # - location
   #discard-paths: yes
   #base-directory: location
