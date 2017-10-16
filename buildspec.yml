@@ -19,7 +19,7 @@ phases:
        - echo Build completed on `date`
 artifacts:
   files:
-    - dist/bundle.js
+    - dist/app.js
     - package.json
   discard-paths: yes
   # - location
