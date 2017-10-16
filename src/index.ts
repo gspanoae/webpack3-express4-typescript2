@@ -4,7 +4,7 @@ import http = require('http');
 var app = express();
 app.set('port', process.env.PORT || 3000);
 app.get('/', function(req: express.Request, res: express.Response) {
-    res.send('Hello world!');
+    res.send('Hello world, kevin!');
 });
 
 http.createServer(app).listen(app.get('port'), function() {
