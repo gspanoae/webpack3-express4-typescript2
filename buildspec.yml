@@ -17,7 +17,7 @@ phases:
   post_build:
     commands:
        - mkdir dist-output
-       - cp -R dist/bundle.js package.json dist-output
+       - cp -R dist/app.js package.json dist-output
        - pwd
        - ls -la
        - ls dist-output/

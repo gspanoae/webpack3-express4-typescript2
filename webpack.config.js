@@ -8,7 +8,7 @@ module.exports = {
   entry: './src/index.ts',
   target: 'node',
   output: {
-    filename: 'bundle.js',
+    filename: 'app.js',
     path: path.resolve(__dirname, 'dist')
   },
   resolve: {
