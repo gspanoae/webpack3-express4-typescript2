@@ -17,9 +17,10 @@ phases:
   post_build:
     commands:
        - mkdir build-output
+       - cp -R dist/bundle.js dist-output
        - pwd
        - ls -la
-       - cp -R dist/bundle.js dist-output
+       - ls dist-output/
        - echo Build completed on `date`
 artifacts:
   files:
